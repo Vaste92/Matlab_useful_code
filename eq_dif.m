@@ -1,9 +1,11 @@
 function [y,A,F]=eq_dif(t,a,b,fx_t,y0)
 
-%t è il tempo, a il vettore dei coeff uscita (derivata grande-piccola), 
+%t Ã¨ il tempo, a il vettore dei coeff uscita (derivata grande-piccola), 
 %b il vettore coeff ingresso (derivata grande-piccola),
-%fx_t la funzione ingresso valutata in t, y0 le CAC da derivata più grande
-%a quella più piccola.
+%fx_t la funzione ingresso valutata in t, y0 le CAC da derivata piÃ¹ grande
+%a quella piÃ¹ piccola.
+
+%TO DO: migliorare la gestione delle derivate degli impulsi.
 
 [~, n]=size(t);
 %differenziale
